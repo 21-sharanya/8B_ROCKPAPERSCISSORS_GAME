@@ -38,6 +38,7 @@ System.out.println("You will play"+ "rounds against the computer\n");
 				 System.out.Println("computer wins this round!\n"
 				 computerScore++;
 			 }
+		}
 
 			//final result
 			System.out.println("-----FINAL SCORE-----");
@@ -56,5 +57,6 @@ System.out.println("You will play"+ "rounds against the computer\n");
 		
 
 	
+
 
 
