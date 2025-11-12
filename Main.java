@@ -11,7 +11,7 @@ public class Main {
 		int rounds = 3;
 
 System.out.println("Welcome to Rock,Paper,Scissors Game!);
-System.out.println("You will play"+ "rounds against the computer\n");
+System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
 		for (int i = 0; i <= rounds; i++) {
@@ -60,6 +60,7 @@ System.out.println("You will play"+ "rounds against the computer\n");
 		
 
 	
+
 
 
 
