@@ -10,7 +10,7 @@ public class Main {
 		int ComputerScience = 0;
 		int rounds = 3;
 
-System.out.println("Welcome to Rock,Paper,Scissors Game!);
+System.out.println("Welcome to Rock,Paper,Scissors Game!");
 System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
@@ -60,6 +60,7 @@ System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
 	
+
 
 
 
