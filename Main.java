@@ -7,7 +7,7 @@ public class Main {
 		Random random = new Random();
 
 		int userScore=0;
-		int ComputerScience = 0;
+		int computerScore = 0;
 		int rounds = 3;
 
 System.out.println("Welcome to Rock,Paper,Scissors Game!");
@@ -60,6 +60,7 @@ System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
 	
+
 
 
 
