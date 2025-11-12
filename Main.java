@@ -1,59 +1,31 @@
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JToggleButton;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Game.panel_game();
-		Game.panel_introduction();
-	}
-}
+		Scanner sc= new Scanner(System.in);
+		Random random = new Random;
 
-class Game {
-	// 0 is rock 1 is paper 2 is scissors
+		int userScore=0;
+		int ComputerScience = 0;
+		int rounds = 3;
 
-	static int score_human;
-	static int score_win = 0;
-	static int score_total = 0;
-	static int score_tie = 0;
+System.out.println("Welcome to Rock,Paper,Scissors Game!);
+System.out.println("You will play"+ "rounds against the computer\n");
+		
 
-	public static void panel_introduction() { // give the instruction to the game
-		String info_text = "Rock, Paper, Scissors!  This game is fairly simple.\nSimply pick your hands whenever you are ready.\nRock beats scissors, scissors beat paper\nand paper wrap the rock. Yes paper beats rock.";
-		JOptionPane.showMessageDialog(null, info_text, "How to play!", 1);
-	}
+		for (int i = 0; i <= rounds; i++) {
+			System.out.println("Round" +i+ ":");
+			System.out.println("Enter your choice(rock,paper,scissors):");
+			String userChoice = sc.nextLine().toLowerCase();
+			
+		//computer's choice
+		int compNum = random.nextInt(3);
+		String computerChoice = (compNum == 0)? "rock":(compNum ==1)?"paper":"scissors";
+		System.out.println("Computer Chose:" + computerChoice);
 
-	public static void panel_game() {
-		JFrame frame_main = new JFrame("Rock, Scissors, Paper");
-		frame_main.getContentPane().setBackground(Color.BLACK);
-		Container panel_main = frame_main.getContentPane();
-		panel_main.setLayout(null);
 
-		String[] icon_path = new String[3];
-		int[] icon_bound = new int[3];
-
-		for (int i = 0; i <= 2; i++) {
-			icon_path[i] = System.getProperty("user.dir") + "/images/" + i + ".png";
-			icon_bound[i] = 40 + 250 * i;
-		}
-		JLabel title_main = new JLabel("Rock Paper Scissors");
-		title_main.setBounds(240, 20, 400, 40);
-		title_main.setFont(new java.awt.Font("Arial", java.awt.Font.BOLD, 22));
-		title_main.setForeground(Color.WHITE);
-
-		JButton btn_rock = new JButton(" ", new ImageIcon(icon_path[0]));
-		btn_rock.setBackground(Color.red);
-		btn_rock.setBounds(icon_bound[0], 100, 200, 250);
-
+			
 		JButton btn_paper = new JButton(" ", new ImageIcon(icon_path[1]));
 		btn_paper.setBackground(Color.yellow);
 		btn_paper.setBounds(icon_bound[1], 100, 200, 250);
@@ -200,3 +172,4 @@ class Game {
 	//end
 
 }
+
