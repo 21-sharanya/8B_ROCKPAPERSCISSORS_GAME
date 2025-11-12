@@ -29,8 +29,8 @@ System.out.println("You will play"+ "rounds against the computer\n");
 				 System.out.println("Its a tie!\n");
 			 } else if (
 				 (userChoice.equals("rock")&& computerChoice.equals("scissors"))
-				 (userChoice.equals("paper") computerChoice.equals("rock")
-				  (userChoice.equals("scissors") computerChoice.equals("paper"))
+				 (userChoice.equals("paper")&& computerChoice.equals("rock")
+				  (userChoice.equals("scissors")&& computerChoice.equals("paper"))
 				 ){
 				 System.out.println("You win this round!\n"
 				userScore++;
@@ -56,4 +56,5 @@ System.out.println("You will play"+ "rounds against the computer\n");
 		
 
 	
+
 
