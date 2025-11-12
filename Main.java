@@ -14,7 +14,7 @@ System.out.println("Welcome to Rock,Paper,Scissors Game!);
 System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
-		for (int i = 0; i <= rounds; i++) {
+		for (int i = 1; i <= rounds; i++) {
 			System.out.println("Round" +i+ ":");
 			System.out.println("Enter your choice(rock,paper,scissors):");
 			String userChoice = sc.nextLine().toLowerCase();
@@ -60,6 +60,7 @@ System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
 	
+
 
 
 
