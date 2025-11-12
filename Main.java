@@ -48,6 +48,9 @@ System.out.println("You will play"+ "rounds against the computer\n");
 				System.out.println("Congragulations! You are the overall winner!")
 			else if (computerScore > userScore)
 					System.out.println("Computer wins the game!")
+			else 
+					System.out.Println("Its a tie overall!")
+				
             sc.close();
 		}
 	}
@@ -57,6 +60,7 @@ System.out.println("You will play"+ "rounds against the computer\n");
 		
 
 	
+
 
 
 
