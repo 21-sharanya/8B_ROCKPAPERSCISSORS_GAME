@@ -21,7 +21,7 @@ System.out.println("You will play"+ rounds + "rounds against the computer\n");
 			
 		//computer's choice
 		int compNum = random.nextInt(3);
-		String computerChoice = (compNum == 0)? "rock":(compNum ==1)?"paper" : "scissors";
+		String computerChoice = (compNum == 0)? "rock":(compNum ==0) ?"paper" : "scissors";
 		System.out.println("Computer Chose:" + computerChoice);
 
 			// determine the winner
@@ -60,6 +60,7 @@ System.out.println("You will play"+ rounds + "rounds against the computer\n");
 		
 
 	
+
 
 
 
